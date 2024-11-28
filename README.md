@@ -38,7 +38,7 @@ NB: **Given more time, small functionalities could be implemented to enhance sca
     - Implemented Login Persistence 
     - Implemented Validation For each Input
     - Make `Reusable` and and `HyBride Component Code Structure` like [Enterprise Level]
-    - Implemented Debouncing Concept
+    - Implemented `Debouncing Concept`
 
 - **Additionally**
     - Add `Sonner` for Notification
