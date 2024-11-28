@@ -9,7 +9,7 @@ const Form = ({ onSubmit, children }:FormProps) => {
   return (
     <form
       onSubmit={onSubmit}
-      className="max-w-md mx-auto mt-20 p-16 bg-white shadow-md rounded"
+      className="max-w-md mx-auto mt-72 p-16 bg-white shadow-md rounded shadow-[#F55F11]"
     >
       {children}
     </form>
@@ -17,3 +17,7 @@ const Form = ({ onSubmit, children }:FormProps) => {
 };
 
 export default Form;
+
+
+
+

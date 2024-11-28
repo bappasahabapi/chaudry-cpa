@@ -7,6 +7,8 @@ interface InputFieldProps {
   register: any;
   required?: boolean;
   showToggle?: boolean;
+  placeholder?: string;
+  error?: string; 
 }
 
 const FormInput = ({
@@ -16,12 +18,14 @@ const FormInput = ({
   register,
   required = false,
   showToggle = false,
+  placeholder,
+  error
 }: InputFieldProps) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="mb-4 flex flex-col items-start gap-2">
-      {/* Label */}
+
       <label
         htmlFor={name}
         className="block text-gray-700 font-bold"
@@ -35,8 +39,12 @@ const FormInput = ({
           {...register(name)}
           id={name}
           type={showToggle && showPassword ? "text" : type}
-          className="w-full px-3 py-2 border rounded pr-10"
+          // className="w-full px-3 py-2 border rounded pr-10"
           required={required}
+          placeholder={placeholder}
+          className={`w-full px-3 py-2 border rounded ${
+            error ? "border-red-500" : "border-gray-300"
+          }`}
         />
         {showToggle && (
           <button
@@ -47,6 +55,9 @@ const FormInput = ({
             {showPassword ? "👁️" : "🔒"}
           </button>
         )}
+
+      {error && <p className="text-red-500 text-sm mt-1 font-bold text-start">{error}</p>}
+
       </div>
     </div>
   );
