@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import { logout } from "@/redux/features/auth/authSlice";
