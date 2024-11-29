@@ -16,7 +16,9 @@ Finally, Run the Project by giving
 
     npm run dev
 
+## 📐 Architecture
 
+![Arc](./arc.png)
 
 ###    🎯  Functionality Implemented</summary>
 
@@ -105,6 +107,4 @@ Response Format:
 
 
 
-
-## 📐 Architecture
 
